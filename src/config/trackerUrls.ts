@@ -13,7 +13,8 @@ let trackerUrls: string[] | undefined = [
 // when using the `npm run dev` script. If you are hosting your own Chitchatter
 // instance, consider populating the trackerUrls above instead.
 if (import.meta.env.VITE_TRACKER_URL) {
-  trackerUrls.unshift(import.meta.env.VITE_TRACKER_URL)
+  // FIXME: Use local nostr tracker for local development
+  //trackerUrls.unshift(import.meta.env.VITE_TRACKER_URL)
 }
 
 // If no tracker URL overrides have been provided, set trackerUrls to undefined
